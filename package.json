@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint --ext js,mjs --ignore-path .gitignore --fix .",
     "test": "echo \"Error: no test specified\" && exit 1",
