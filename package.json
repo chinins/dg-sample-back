@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext mjs --fix .",
+    "lint": "eslint --ext js,mjs --ignore-path .gitignore --fix .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -83,7 +83,7 @@
   },
   "lint-staged": {
     "*.mjs": [
-      "eslint --ext mjs --fix",
+      "eslint --ext js,mjs --fix",
       "git add"
     ]
   }
