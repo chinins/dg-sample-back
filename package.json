@@ -60,16 +60,25 @@
       "prettier"
     ],
     "rules": {
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": true
-        }
-      ],
       "prettier/prettier": [
         "error"
       ]
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.js"
+        ],
+        "rules": {
+          "import/no-extraneous-dependencies": [
+            "error",
+            {
+              "devDependencies": true
+            }
+          ]
+        }
+      }
+    ]
   },
   "prettier": {
     "printWidth": 100,
