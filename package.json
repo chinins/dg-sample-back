@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/medfreeman/dg-sample-back/issues"
   },
-  "homepage": "https://github.com/medfreeman/dg-sample-back#readme"
+  "homepage": "https://github.com/medfreeman/dg-sample-back#readme",
+  "engines": {
+    "node": "10.x"
+  }
 }
