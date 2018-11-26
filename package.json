@@ -1,0 +1,20 @@
+{
+  "name": "dg-sample-back",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medfreeman/dg-sample-back.git"
+  },
+  "author": "Mehdi Lahlou <mlahlou@protonmail.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medfreeman/dg-sample-back/issues"
+  },
+  "homepage": "https://github.com/medfreeman/dg-sample-back#readme"
+}
