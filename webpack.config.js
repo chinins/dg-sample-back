@@ -4,6 +4,7 @@ import webpack from 'webpack';
 import cleanWebpackPlugin from 'clean-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 
+import pkg from './package.json';
 import './env';
 
 const IS_DEV = process.env.NODE_ENV === 'development';
@@ -29,9 +30,7 @@ export default {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
+          options: pkg.babel
         }
       }
     ]
