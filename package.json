@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "api:build": "run-s webpack:build",
     "api:start": "run-s node:start",
-    "api:watch": "run-p webpack:watch node:watch",
+    "api:watch": "run-p node:watch webpack:watch",
     "webpack:build": "webpack --config-register esm",
     "webpack:watch": "webpack --config-register esm --watch",
     "node:start": "node dist/index.js",
