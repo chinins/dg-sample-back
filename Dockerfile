@@ -20,5 +20,5 @@ RUN ["yarn", "cache", "clean"]
 
 COPY --from=builder /usr/src/api/dist ./dist
 
-EXPOSE 8080
 CMD ["yarn", "node:start"]
+EXPOSE 8080

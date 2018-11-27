@@ -10,5 +10,5 @@ RUN ["yarn", "cache", "clean"]
 
 COPY . .
 
-EXPOSE 8080
 CMD ["yarn", "api:watch"]
+EXPOSE 8080
