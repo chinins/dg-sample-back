@@ -14,8 +14,8 @@
     "webpack:watch": "webpack --config-register esm --watch",
     "node:start": "node dist/index.js",
     "node:watch": "nodemon dist/index.js",
-    "build": "docker-compose build",
-    "start": "docker-compose up"
+    "build": "cross-dotenv docker-compose build",
+    "start": "cross-dotenv docker-compose up"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
+    "cross-dotenv": "^1.0.4",
     "dotenv": "^6.1.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
