@@ -1,0 +1,1 @@
+export { getResource } from './getResource';

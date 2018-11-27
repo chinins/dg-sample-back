@@ -1,11 +1,18 @@
 import util from 'util';
 
 import Koa from 'koa';
+import logger from 'koa-logger';
+
+import { createRouter } from './routes';
 
 console.log('hello world');
 console.log('environment variables: %s', util.inspect(process.env));
 
 const app = new Koa();
+
+app.use(logger());
+
+createRouter(app);
 
 app.use(async ctx => {
   ctx.body = 'Hello World';

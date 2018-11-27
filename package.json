@@ -56,7 +56,10 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "koa": "^2.6.2"
+    "fs-extra": "^7.0.1",
+    "koa": "^2.6.2",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0"
   },
   "babel": {
     "presets": [
