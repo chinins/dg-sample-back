@@ -1,0 +1,12 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dg-sample-api
+    env_file: .env
+    volumes:
+      - .:/usr/src/api
+    ports:
+      - '8080'

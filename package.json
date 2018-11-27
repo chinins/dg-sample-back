@@ -7,7 +7,15 @@
   "scripts": {
     "lint": "eslint --ext js,mjs --ignore-path .gitignore --fix .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config-register esm"
+    "api:build": "run-s webpack:build",
+    "api:start": "run-s node:start",
+    "api:watch": "run-p webpack:watch node:watch",
+    "webpack:build": "webpack --config-register esm",
+    "webpack:watch": "webpack --config-register esm --watch",
+    "node:start": "node dist/index.js",
+    "node:watch": "nodemon dist/index.js",
+    "build": "docker-compose build",
+    "start": "docker-compose up"
   },
   "repository": {
     "type": "git",
@@ -39,6 +47,8 @@
     "esm": "^3.0.84",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
+    "nodemon": "^1.18.6",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.15.2",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
