@@ -2,6 +2,7 @@ import util from 'util';
 
 import Koa from 'koa';
 import logger from 'koa-logger';
+import cors from 'koa-cors';
 
 import { createRouter } from './routes';
 
@@ -11,6 +12,7 @@ console.log('environment variables: %s', util.inspect(process.env));
 const app = new Koa();
 
 app.use(logger());
+app.use(cors());
 
 createRouter(app);
 
