@@ -2,8 +2,9 @@ import Router from 'koa-router';
 
 import { posts } from './posts.mjs';
 import { home } from './home.mjs';
+import { post } from './post.mjs';
 
-const routes = [home, posts];
+const routes = [home, posts, post];
 
 export const createRouter = app => {
   const router = new Router();
